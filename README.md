@@ -30,63 +30,6 @@ As a game hero, you need to rescue 7 villages that have been captured by enemies
 - **Docker & Docker Compose**: Containerization
 - **PyMongo**: MongoDB Python driver
 
-## 📊 Data Structures Usage
-
-### 1. **Array/Linked List** - Villages (10 points)
-```python
-# Representation structure of 7 villages
-villages = [
-    {"name": "Forest Village", "items": [...], "is_rescued": False},
-    {"name": "Mountain Village", "items": [...], "is_rescued": False},
-    # ...
-]
-```
-
-### 2. **Linked List** - Bag Management (15 points)
-```python
-class Inventory:
-    def __init__(self, capacity=10):
-        self.items = []
-        self.capacity = capacity
-        self.current_count = 0
-```
-
-### 3. **Stack** - Item Operations (15 points)
-```python
-def push(item):    # Add item
-def pop():         # Remove last item
-```
-
-### 4. **Queue** - Village Rescue Order (15 points)
-```python
-village_queue = [3, 4, 5, 6, 7]  # Villages to be rescued
-```
-
-### 5. **Binary Search Tree (BST)** - Search/Sorting (15 points)
-```python
-# Store items in BST by power points
-# Fast search: "Do I have a sword in my bag?"
-```
-
-### 6. **Item Usage** - Game Mechanics (20 points)
-```python
-def useItem(itemName):
-    # Item consumption and capacity update
-    # Check rescue requirements
-```
-
-## 🎯 Game Requirements
-
-### Rescue Requirements (Last 3 Villages)
-- **5th Village (Ice Village)**: Axe + Potion required
-- **6th Village (Volcano Village)**: Shield + Fire Resistance Potion required  
-- **7th Village (Dark Castle)**: Legendary Weapon + Magic Scroll + Crown required
-
-### In-Game Queries
-1. ❓ "Which villages need to be rescued?"
-2. ❓ "Which village am I in now and which ones have I rescued?"
-3. ❓ "What inventories are in which village?"
-
 ## 🚀 Installation and Running
 
 ### Running with Docker (Recommended)
@@ -99,14 +42,10 @@ cd save-the-village
 
 2. **Set your MongoDB URI:**
 ```bash
-# Create .env file
+# Mail me for .env file
 echo "MONGO_URI=your_mongodb_connection_string" > .env
 ```
 
-3. **Start with Docker:**
-```bash
-docker-compose up --build
-```
 
 ### Manual Installation
 
@@ -170,20 +109,6 @@ SaveTheVillage/
 - **players**: Player status and inventory
 - **items**: Item master data
 - **game_progress**: Game progress status
-
-## 🏆 Score Distribution
-
-| Feature | Points |
-|---------|--------|
-| Village Representation Structure | 10 |
-| Inventory Management | 15 |
-| Stack Operations | 15 |
-| Queue Usage | 15 |
-| BST Search/Sorting | 15 |
-| Item Usage | 20 |
-| Console Interface | 10 |
-| **Total** | **100** |
-| AVL Tree (Bonus) | +10 |
 
 ## 🤝 Contributing
 
