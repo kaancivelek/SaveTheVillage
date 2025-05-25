@@ -1,4 +1,4 @@
-# �� Save The Village - Village Rescue Game
+# Save The Village - Village Rescue Game
 
 ## 📖 Project Description
 
